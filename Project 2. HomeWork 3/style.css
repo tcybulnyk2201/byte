@@ -96,3 +96,60 @@ body {
     padding: 30px 0 106px;
 }
 
+.categories {
+    background-color:#00a1c61a;
+    padding: 108px 0 110px;
+}
+
+.categories_preheader{
+    font-size: 22px;
+    line-height: 34px;
+    color: #2B292D;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.categories_header {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #2B292D;
+    margin-bottom: 30px;
+    /* margin:0 0 30px;
+    width: 555px; */
+}
+
+.center,
+.categories_description {
+    text-align: center;
+}
+
+
+.categories_text{
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    margin-bottom: 34px;
+}
+
+.second_button {
+    width: 158px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    border: none;
+    font-size: 18px;
+    line-height: 13px;
+    font-weight: 700;
+}
+
+.categories_button {
+    margin-bottom: 111px;
+}
+
+.categories_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 262px);
+    gap: 0 30px;
+}
