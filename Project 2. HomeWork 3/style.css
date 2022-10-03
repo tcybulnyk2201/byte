@@ -416,8 +416,6 @@ body {
     opacity: 1;
 }
 
-
-
 .checkbox{
     opacity: 0;
 }
@@ -426,6 +424,20 @@ body {
     margin-left: -25px;
 }
 
+
+.check {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.check:not(:last-of-type){
+    margin-bottom: 4px;
+}
+
+.checkbox_menu, .check-wrapper{
+    display: none;
+} 
 
 @media screen and (max-width: 1200px){
     .conteiner{
@@ -443,10 +455,6 @@ body {
     }
 
     .logo_text{
-        display: none;
-    }
-
-    .header_nav{
         display: none;
     }
 
@@ -623,6 +631,67 @@ body {
     .checkbox_form{
         margin-bottom: 15px;
     }
+
+    .checkbox_menu, .check-wrapper{
+        display: block;
+    } 
+
+    .menu{
+        position: relative;
+    }
+    .check{
+        transition: 300ms;
+    }
+    
+    .checkbox_menu{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index:2;
+    }
+
+    .check-wrapper{
+        position: relative;
+        z-index: 1;
+    }
+    
+    .checkbox_menu:checked ~ .check-wrapper> .check:first-of-type {
+        transform: rotate(45deg) translate(13px, 8px);
+    }
+    
+    .checkbox_menu:checked ~ .check-wrapper> .check:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .checkbox_menu:checked ~ .check-wrapper> .check:last-of-type {
+        transform: rotate(-45deg) translate(2px, 3px);
+    }
+    
+    .checkbox_menu:checked ~ .header_nav{
+        display: block;
+        position: fixed;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .header_li {
+        margin-right:0 !important;
+        margin-bottom: 20px;
+    }
+
+    .header_ul {
+        margin-right: 0;
+    }
+
 }
 
 @media screen and (max-width: 800px){
