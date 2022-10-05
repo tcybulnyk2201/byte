@@ -855,6 +855,10 @@ hr{
         display: none;
     }
 
+    .logo_footer ~ .logo img{
+        margin-right: 0;
+    }
+
 
     
 }
