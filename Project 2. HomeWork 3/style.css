@@ -306,6 +306,8 @@ body {
     max-width: 555px;
 }
 
+
+/***** Стили для раскрывающихся блоков ******/
 .about-items {
     max-width: 750px;
     margin: 0 auto 20px;
@@ -320,7 +322,7 @@ body {
     line-height: 28px;
     color: #2B292D;
     font-weight: 700;
-    max-width: 408px;
+    width: 408px;
 }
 
 .about-items_description{
@@ -344,6 +346,7 @@ body {
 }
 
 .change-color{
+    color: white;
     background-color: #3141C5;
     border: 2px solid #3141C5;
     transition:300ms;
@@ -354,6 +357,8 @@ body {
     transition:300ms;
 }
 
+
+/***** Блок ABOUT ******/
 .info_title-about{
     margin: 0 auto 20px;
     text-align: center;
@@ -608,6 +613,95 @@ hr{
 .about_btn{
     text-align: center;
 }
+
+
+/***** Блок SPACE ******/
+
+.info_pretitle-green {
+    color:  #009B4D;;
+}
+
+.space_title{
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B292D;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.space_description {
+    font-size: 18px;
+    line-height: 26px;
+    color: #2B292D;
+    margin-bottom: 13px;
+    display: none;
+}
+
+.space {
+    padding-bottom: 110px;    
+    position:relative
+}
+
+.space_half_img{
+    position: absolute;  
+    top: 35%;  
+}
+
+.space_img {
+    position: absolute;   
+    right: 0; 
+}
+
+.space_items{
+    max-width: 459px;
+    border-bottom: 1px solid #2B292D15;
+}
+
+.space_main{
+    margin-bottom: 8px;
+}
+
+.space_items:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+
+
+
+/***** Стили для Модального блока ******/
+.modal-overlay {
+    display: none;
+    position:fixed;
+    background-color: #1026ef60;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.modal{
+    text-align: center;
+    max-width: 550px;
+    background-color: wheat;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -987,6 +1081,10 @@ hr{
         width: 100%;
     }
 
+    .flex-wrap{
+        flex-wrap:wrap;
+    }
+
 }
 
 @media screen and (max-width: 550px){
@@ -1009,6 +1107,10 @@ hr{
 
     .main-conteiner > div:last-of-type {
         margin-top: 33px;
+    }
+
+    .about-items_title {
+        width: 300px;
     }
 }
 
@@ -1179,8 +1281,10 @@ hr{
         margin-bottom: 30px;
     }
 
-
-
+    .about-items_title {
+        width: 200px;
+        margin-bottom: 18px;
+    }
 
 }
 
@@ -1257,3 +1361,4 @@ hr{
     }
 
 }
+
