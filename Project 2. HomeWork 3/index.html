@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -103,7 +104,7 @@
         </div>
     </section>
     <section class="space">
-        <div class="conteiner flex">
+        <div class="conteiner flex flex_inbox-column2">
             <div class="info">
                 <p class="info_pretitle info_pretitle-green">
                     Features
@@ -149,7 +150,7 @@
                 </div>
             </div>
             <div class="space_img">
-                <img src="./Image/Space/Invision Screen.png" alt="">
+                <img class="conteiner-image_img" src="./Image/Space/Invision Screen.png" alt="">
             </div>
         </div>
         <div class="space_half_img">
@@ -250,7 +251,7 @@
                 <button class="main_button button-margin button-strech">
                     Get Started
                 </button>
-                <button class="second_button button-strech">
+                <button id="open-modal" class="second_button button-strech">
                     Learn More
                 </button>
             </div>
@@ -288,8 +289,57 @@
             <img class="logos_img" src="./Image/Logos/2_Logo.png" alt="Logo 2"></img>
             <img class="logos_img" src="./Image/Logos/3_Logo.png" alt="Logo 3"></img>
             <img class="logos_img" src="./Image/Logos/4_Logo.png" alt="Logo 4"></img>
-            <img class="logos_img"src="./Image/Logos/5_Logo.png" alt="Logo 5"></img>
+            <img class="logos_img" src="./Image/Logos/5_Logo.png" alt="Logo 5"></img>
             <img class="logos_img" src="./Image/Logos/6_Logo.png" alt="Logo 6"></img>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="conteiner">
+            <div class="slider-block">
+                <div class="slide">
+                    <p class="slide_title">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </p>
+                    <p class="info_text slide_text">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <p class="slide_autor">
+                        Viella Malkovich
+                    </p>
+                    <p class="slide_job">
+                        Creative Director at Johnson
+                    </p>
+                </div>
+                <div class="slide">
+                    <p class="slide_title">
+                        Lorem ipsum dolor sit amet consectetur. businesses – big and small
+                    </p>
+                    <p class="info_text slide_text">
+                        “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam iusto ad adipisci ullam non!”
+                    </p>
+                    <p class="slide_autor">
+                        Laura Labovsky
+                    </p>
+                    <p class="slide_job">
+                        Ux disainerUX/UI Designer
+                </div>
+                <div class="slide">
+                    <p class="slide_title">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. g and small
+                    </p>
+                    <p class="info_text slide_text">
+                        “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam iusto ad adipisci ullam non!”
+                    </p>
+                    <p class="slide_autor">
+                        Ivan Ivanov
+                    </p>
+                    <p class="slide_job">
+                        Front-End Developer
+                </div>
+            </div>
+            <div class="slider_img">
+                <img src="./Image/Slider/ouch.png">
+            </div>
         </div>
     </section>
     <section class="about">
@@ -506,8 +556,10 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/modal.js"></script>
+    <script src="./script/slider.js"></script>
 </body>
 </html>
 

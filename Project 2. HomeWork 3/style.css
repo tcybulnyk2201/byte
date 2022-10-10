@@ -22,6 +22,10 @@ body {
     justify-content: start;
 }
 
+.info{
+    z-index: 3;
+}
+
 .logo img {
     margin-right: 15px;
 }
@@ -320,7 +324,6 @@ body {
 .about-items_title{
     font-size: 22px;
     line-height: 28px;
-    color: #2B292D;
     font-weight: 700;
     width: 408px;
 }
@@ -328,12 +331,10 @@ body {
 .about-items_description{
     font-size: 18px;
     line-height: 24px;
-    color: #2B292D30;
 }
 
 .about-items_text{
     margin-top: 3px;
-    color: #2B292D;
     font-size: 18px;
     line-height: 26px;
     max-width: 410px;
@@ -624,15 +625,14 @@ hr{
 .space_title{
     font-size: 22px;
     line-height: 26px;
-    color: #2B292D;
     font-weight: 700;
     margin-left: 15px;
 }
 
 .space_description {
+    color: #2B292D;
     font-size: 18px;
     line-height: 26px;
-    color: #2B292D;
     margin-bottom: 13px;
     display: none;
 }
@@ -644,17 +644,26 @@ hr{
 
 .space_half_img{
     position: absolute;  
-    top: 35%;  
+    bottom: 35%;  
+    z-index: 1;
 }
 
 .space_img {
     position: absolute;   
     right: 0; 
+    z-index: 1;
 }
 
 .space_items{
+    color: #2B292D;
     max-width: 459px;
     border-bottom: 1px solid #2B292D15;
+    cursor: pointer;
+}
+
+.space_items-change-color{
+    color: #3142C6;
+    border-bottom: 3px solid #3142C6;
 }
 
 .space_main{
@@ -700,11 +709,75 @@ hr{
     cursor: pointer;
 }
 
+/********* Стили для блока Слайдера *************/
+
+.slider{
+    padding-bottom: 67px;
+    border-bottom: 1px solid #00000010;
+    position: relative;
+}
+
+.slide_title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #3142C6;
+    margin-bottom: 28px;
+}
+
+.slide_autor{
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #2B292D;
+}
+
+.slide_text{
+    max-width: 750px;
+    margin:0 auto 34px;
+    text-align: center;
+}
+
+.slide_job {
+    line-height: 24px;
+    text-align: center;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.slider_img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a.active, 
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #3142C5;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #2B292D20;
+    width: 8px;
+    height: 8px;
+}
 
 
 
 
-
+@media screen and (max-width: 1335px){
+    .space_half_img{
+        bottom:-10%;
+    }
+}
 
 @media screen and (max-width: 1200px){
     .conteiner{
@@ -903,7 +976,8 @@ hr{
         display: block;
     } 
 
-    .menu{
+    .menu,
+    .space_img{
         position: relative;
     }
 
@@ -1057,7 +1131,51 @@ hr{
         margin-bottom: 67px;
     }
 
+    .space_img{
+        margin-top: 49px;
+    }
+
+    .space_half_img{
+        bottom: 70%;
+    }
+
+    .space_items:first-of-type {
+        margin-top: 10px;
+    }
+
+    .space {
+        padding-bottom: 67px;
+    }
+
+    .slide_title{
+        max-width: 583px;
+        margin: 0 auto 14px;
+    }
+
+    .slide_text {
+        max-width: 583px;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 15px;
+    }
+
+    .slider_img {
+        position: relative;
+        text-align: center;
+    }
     
+    .slider {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .about {
+        padding-top: 87px;
+    }
+
+    .space_description {
+        text-align: left;
+}
 }
 
 @media screen and (max-width: 800px){
@@ -1085,6 +1203,12 @@ hr{
         flex-wrap:wrap;
     }
 
+}
+
+@media screen and (max-width: 635px) {
+    .space_half_img{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -1286,6 +1410,17 @@ hr{
         margin-bottom: 18px;
     }
 
+    .slide_title {
+        margin-bottom: 29px;
+    }
+
+    .space_title,
+    .space_description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
 }
 
 @media screen and (max-width: 360px){
@@ -1358,6 +1493,17 @@ hr{
 
     .info_text-images {
         margin-bottom: 25px;
+    }
+
+    .slide_title,
+    .slide_title,
+    .slide_autor,
+    .slide_job {
+        text-align: left;
+    }
+
+    .about {
+        padding-top: 120px;
     }
 
 }
